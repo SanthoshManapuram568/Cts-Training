@@ -1,0 +1,54 @@
+<div>
+    <form [formGroup]="myFormGroup"  (ngSubmit)="saveProduct()">
+    <div class="row mt-5">
+        <div class=" offset-sm-2 col-4">
+            <label for="">Product name</label>
+        </div>
+        <div class="  col">
+            <input type="text" name="pname" [formControl]="myFormGroup.controls['product_name']" />
+            <span *ngIf="myFormGroup.controls['product_name'].hasError('required') && myFormGroup.controls['product_name'].dirty" class="bg-warning">Enter Name !!!</span>
+            <span *ngIf="myFormGroup.controls['product_name'].hasError('text') && myFormGroup.controls['product_name'].dirty" class="bg-warning">username not avilable</span>
+        </div>
+    </div>
+    <div class="row mt-2">
+        <div class=" offset-sm-2 col-4">
+            <label for="">Product catgeory</label>
+        </div>
+        <div class="col">
+            <input type="text" name="pcat" [formControl]="myFormGroup.controls['product_catageory']" />
+            <span *ngIf="myFormGroup.controls['product_catageory'].hasError('required') && myFormGroup.controls['product_catageory'].dirty" class="bg-warning">Enter Catageory !!!</span>
+        </div>
+    </div>
+    <div class="row mt-2" >
+        <div class=" offset-sm-2 col-4">
+            <label for="">Product cost</label>
+        </div>
+        <div class="col">
+            <input type="text" name="pcost" [formControl]="myFormGroup.controls['product_cost']" />
+            <span *ngIf="myFormGroup.controls['product_cost'].hasError('range') && myFormGroup.controls['product_cost'].dirty" class="bg-warning">Invalid Cost value!!!</span>
+            <span *ngIf="myFormGroup.controls['product_cost'].hasError('required') && myFormGroup.controls['product_cost'].dirty" class="bg-warning">Cost required!!!</span>
+        
+        </div>
+    </div>
+    <div class="row mt-2">
+        <div class=" offset-sm-2 col">
+            <!--
+
+                disable submit button until validation passed by all constraints
+                
+            -->
+            <input type="submit" value="Save" [disabled]="!myFormGroup.valid" />
+        </div>
+    </div>
+    </form >
+     <div *ngIf="!myFormGroup.valid && myFormGroup.dirty"  class=" row offset-sm-2 col-8 offset-sm-2 bg-danger">
+         <h3>invalid details</h3>
+     </div>
+    <div class="row mt-4">
+    <h2  class=" offset-sm-2 col-12">Name : {{name}}</h2>
+    <h2  class=" offset-sm-2 col-12">Catageory : {{catageory}}</h2>
+    <h2  class=" offset-sm-2 col-12">Cost : {{cost}}</h2>
+    </div>
+    </div>
+    <br><br>
+    
