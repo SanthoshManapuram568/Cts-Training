@@ -1,0 +1,26 @@
+<div><h1>value1 : {{value1}}</h1></div>
+<div><h1>value2 : {{value2}}</h1></div>
+<div><h1> value : {{result}}</h1></div>
+<div >
+    <input type ="button" value ="Multiply" (click)="calMul()"/>
+    <input type ="button" value ="Added" (click)="calAdd()"/>
+    <input type ="button" value ="Substract" (click)="calSub()"/>
+</div><hr>
+<h1>ng if</h1>
+<div *ngIf="value2!=0">
+    <input type="button" value="divide" (click)="calDiv()"/>
+</div>
+<hr>
+<h1>
+    ng switch
+</h1>
+<div [ngSwitch]="method">
+    <div *ngSwitchCase="'add'"><input type ="button" value ="Add" (click)="calAdd()"/></div>
+    <div *ngSwitchCase="mul"> <input type ="button" value ="Multiply" (click)="calMul()"/></div>
+
+</div>
+<hr>
+<h1>ng for </h1>
+<ul *ngFor="let game of games; let i=index">
+  <h4 *ngIf="play!='Nogames da!'&& i != games.length-1"> Gamename : {{ game }}</h4>
+  </ul>

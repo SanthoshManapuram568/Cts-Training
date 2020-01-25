@@ -1,0 +1,15 @@
+<div>
+  <div><h3>Enter value 1 </h3><input type="text" #v1/></div>
+  <div><h3>Enter value 2 </h3><input type="text" #v2/></div>
+  <div class="row">
+    <div class="col"><input type="button" value="+" (click)="calculate(v1,v2,'+')"/></div>
+    <div class="col"><input type="button" value="-" (click)="calculate(v1,v2,'-')"/></div>
+    <div class="col"><input type="button" value="*" (click)="calculate(v1,v2,'*')"/></div>
+    <div class="col"><input type="button" value="/" (click)="calculate(v1,v2,'/')"/></div>
+  </div>
+  <div><h3>Result</h3> <input type="text" value="{{result}}" /></div>
+
+  <div *ngIf="!isValid">
+    <h3>{{errorMessage}}</h3>
+  </div>
+</div>

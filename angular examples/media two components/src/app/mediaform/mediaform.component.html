@@ -1,0 +1,51 @@
+<div >
+   
+    <div class="row mt-5" >
+        <div class=" offset-sm-2 col-4">
+            <label for="">File Name</label>
+        </div>
+        <div class="col">
+            <input type="text" #txtfile />
+        </div>
+    </div>
+    <div class="row">
+        <div class=" offset-sm-2 col-4">
+            <label for="">Title :</label>
+        </div>
+        <div class="  col">
+            <input type="text" #txttiltle />
+        </div>
+    </div>
+    <div class="row">
+        <div class=" offset-sm-2 col-4">
+            <label for="">Type of media</label>
+        </div>
+        <div class="col">
+            <input type="text" #txtmedia />
+        </div>
+    </div>
+    <div class="row">
+        <div class=" offset-sm-2 col-4">
+            <label for="">Description</label>
+        </div>
+        <div class="col">
+            <input type="text" #txtdes />
+        </div>
+    </div>
+    <div class="row">
+        <div class=" offset-sm-2 col-4">
+            <label for="">Tags</label>
+        </div>
+        <div class="col">
+            <input type="text" #txttag />
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class=" offset-sm-2 col">
+            <input type="button" value="SaveMedia" (click)="saveItem(txtfile,txttiltle,txtmedia,txtdes,txttag)"/>
+        </div>
+    </div>
+<br><br>
+<app-medialist [multimediaList]="multimedia"></app-medialist>
+</div>

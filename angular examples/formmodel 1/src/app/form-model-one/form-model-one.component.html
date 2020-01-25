@@ -1,0 +1,40 @@
+<div>
+<form ngForm #frm="ngForm" (ngSubmit)="saveProduct(frm.value)">
+<div class="row mt-5">
+    <div class=" offset-sm-2 col-4">
+        <label for="">Product name</label>
+    </div>
+    <div class="  col">
+        <input type="text" name="pname" ngModel />
+    </div>
+</div>
+<div class="row mt-2">
+    <div class=" offset-sm-2 col-4">
+        <label for="">Product catgeory</label>
+    </div>
+    <div class="col">
+        <input type="text" name="pcat" ngModel />
+    </div>
+</div>
+<div class="row mt-2" >
+    <div class=" offset-sm-2 col-4">
+        <label for="">Product cost</label>
+    </div>
+    <div class="col">
+        <input type="text" name="pcost" ngModel />
+    </div>
+</div>
+<div class="row mt-2">
+    <div class=" offset-sm-2 col">
+        <input type="submit" value="Save" />
+    </div>
+</div>
+</form >
+ 
+<div class="row mt-4">
+<h2  class=" offset-sm-2 col-12">Name : {{name}}</h2>
+<h2  class=" offset-sm-2 col-12">Catageory : {{catageory}}</h2>
+<h2  class=" offset-sm-2 col-12">Cost : {{cost}}</h2>
+</div>
+</div>
+<br><br>
