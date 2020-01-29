@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            img{
+                position: relative;
+                width: 100px;
+                height: 70px;
+            }
+            .card-img-top{
+                height: 400px;
+            }
+            nav a{
+                background-color: whitesmoke;
+            }
+        </style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
+    </head>
+    <body>
+        <header class="container mt-4">
+            <hgroup class="row">
+                <div class="col-sm-3">
+                    <div class="d-flex justify-content-start">
+                        <img src="logo.jpg" class="rounded-circle" alt="logo">
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <nav>
+                        <ul class="nav  nav-tabs nav-justified">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link ">Upload-Media</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#"class="nav-link ">MyMedia</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link ">Follower/Followers</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+               
+                <div class="col-sm-3" >
+                    <div class="d-flex justify-content-end">
+                        <button style="background-color: whitesmoke;" type="button" class="p-1 btn  w-50">Account</button>
+                    </div>
+                </div>
+            </hgroup>
+            <hgroup class="row mt-3">
+                <div class="col-sm-2">
+                    <a href="#"><img src="#" class="rounded" alt="profile"></a>
+                </div>
+                <div class="col-sm-10">
+                    <h1>@welcome</h1>
+                </div>
+            </hgroup>
+        </header>
+ <div class="container mt-5 mb-5">
+     <div class="row">
+         <h3>MediaComponent</h3>
+     </div>
+     <div class="row mt-4">
+         <aside class="col-sm-6">
+             <div class="row">
+                 <div class="col-sm-1 d-flex justify-content-start mb-3">
+                    <i class='fas fa-user' style='font-size:36px'></i>
+                 </div>
+                 <div class="col-sm-5 d-flex justify-content-start ml-3">
+                     <h5>Title comes here......</h5>
+                 </div>
+                 <div class="col-sm-6">
+
+                 </div>
+             </div>
+             <div class="row">
+                <div class="card w-75">
+                    <img class="card-img-top" src="#" alt="Card image">
+                </div>
+         </aside>
+         <section class="col-sm-6">
+             <div class="row">
+                 <div class="col-sm-9 d-flex justify-content-start pl-0 ml-0">
+                    <div class="col-sm-4 btn-group">
+                        <button style="background-color: whitesmoke;" type="button" class="btn  active px-3">Sepia</button>
+                        <button type="button" style="background-color: whitesmoke;" class="btn  px-3">Grey</button>
+                        <button style="background-color: whitesmoke;" type="button" class="btn  px-3">Brightness</button>
+                        <button style="background-color: whitesmoke;" type="button" class="btn  px-3">Contrast</button>
+                    </div>
+                 </div>
+                 <div class="col-sm-3">
+
+                 </div>
+             </div>
+             <div class="row mt-4">
+                 <textarea class="form-control" placeholder="MultiLine Description here..."></textarea>
+             </div>
+             <div class="row mt-4">
+                <input type="text" class="form-control" placeholder="Tags will come here mountain,nature,southIndia,aswesom">
+            </div>
+            <div class="row mt-4">
+              <div class="col-sm-6 d-flex justify-content-center">
+                <i class="fas fa-heart" style='font-size:36px'></i>
+              </div>
+              <div class="col-sm-6 d-flex justify-content-start">
+                <i class='fas fa-comments' style='font-size:36px'></i>
+              </div>
+            </div>
+            <div class="row mt-3">
+               <h4>Comments</h4>
+            </div>
+            <div class="row mt-4">
+                <div class="col-sm-7 d-flex justify-content-center">
+                    <textarea class="form-control" placeholder="aswesom click.."></textarea>
+                </div>
+                <div class="col-sm-5 d-flex justify-content-start">
+                    <div class="btn-group-vertical btn-group-sm">
+                        <button style="background-color: whitesmoke;" type="button" class="btn px-3">Reply</buttonstyle="background-color: whitesmoke;">
+                        <button style="background-color: whitesmoke;" type="button" class="btn  px-3">Like</button>
+                        <button style="background-color: whitesmoke;" type="button" class="btn  px-3">Dislike</button>
+                        <button style="background-color: whitesmoke;" type="button" class="btn  px-3">Delete</button>
+                      </div>
+                </div>
+             </div>
+             <div class="row mt-4">
+                <div class="col-sm-7 d-flex justify-content-center">
+                    <textarea class="form-control" placeholder="Beauty of South.."></textarea>
+                </div>
+                <div class="col-sm-5 d-flex justify-content-start">
+                    <div class="btn-group-vertical btn-group-sm">
+                        <button style="background-color: whitesmoke;" type="button" class="btn  px-3">Reply</button>
+                        <button style="background-color: whitesmoke;" type="button" class="btn  px-3">Like</button>
+                        <button style="background-color: whitesmoke;" type="button" class="btn  px-3">Dislike</button>
+                        <button style="background-color: whitesmoke;" type="button" class="btn  px-3">Delete</button>
+                      </div>
+                </div>
+             </div>
+             <div class="row mt-4">
+                <div class="col-sm-7 d-flex justify-content-center">
+                    <textarea class="form-control" placeholder="I Love India"></textarea>
+                </div>
+                <div class="col-sm-5 d-flex justify-content-start">
+                    <div class="btn-group-vertical btn-group-sm">
+                        <button style="background-color: whitesmoke;" type="button" class="btn  px-3">Reply</button>
+                        <button style="background-color: whitesmoke;" type="button" class="btn  px-3">Like</button>
+                        <button style="background-color: whitesmoke;" type="button" class="btn  px-3">Dislike</button>
+                        <button style="background-color: whitesmoke;" type="button" class="btn  px-3">Delete</button>
+                    </div>
+                </div>
+             </div>
+             <div class="row mt-4">
+                <div class="col-sm-7 d-flex justify-content-center">
+                    <textarea class="form-control" placeholder="Thank you :)"></textarea>
+                </div>
+                <div class="col-sm-5 d-flex justify-content-start">
+                    <div class="btn-group-vertical btn-group-sm">
+                        <button style="background-color: whitesmoke;" type="button" class="btn  px-3">Like</button>
+                        <button style="background-color: whitesmoke;" type="button" class="btn  px-3">Dislike</button>
+                        <button style="background-color: whitesmoke;" type="button" class="btn  px-3">Delete</button>
+                    </div>
+                </div>
+             </div>
+         </section>  
+     </div>
+ </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    </body>
+    </html>
