@@ -1,0 +1,17 @@
+<hr />
+<app-menu></app-menu>
+
+<br/>
+
+
+<input type="search"  placeholder="Search here..." #srch/>
+<input type="button" value="Search" (click)="searchCall(srch)"/>
+
+<hr/>
+<div *ngIf="auth.isUserLoggedIn()" class="text-success">
+    <h3>Welcome {{auth.getUserDetails()}}</h3>
+</div>
+
+<hr />
+<app-pipe-display></app-pipe-display>
+<router-outlet></router-outlet>

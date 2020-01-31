@@ -1,0 +1,10 @@
+<div>
+    <input type="text" #ip />
+</div>
+<div>
+    <input type="button" (click)="msg()"  value ="change" (click)="change(ip)"/>
+</div>
+<div>
+    <h1><i *ngIf="size==0" style="color: red;">{{size|pipeCheck}}</i></h1>
+   <h1> <i *ngIf="size!=0">{{size|pipeCheck}}</i></h1>
+</div>

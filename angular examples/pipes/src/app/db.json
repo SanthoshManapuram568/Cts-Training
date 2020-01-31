@@ -1,0 +1,22 @@
+{
+  "products": [
+    {
+      "name": "First",
+      "category": "Books",
+      "cost": 50,
+      "id": 1
+    },
+    {
+      "id": 3,
+      "name": "Third",
+      "category": "Notes",
+      "cost": 300
+    },
+    {
+      "id": 4,
+      "name": "Fourth",
+      "category": "Markers",
+      "cost": 200
+    }
+  ]
+}
