@@ -1,0 +1,25 @@
+<div>
+    <input type="button" value="Add" class="btn-primary"(click)="add()"/>
+
+    <hr/>
+    <table class="table">
+      <thead>
+        <th>Sn</th>
+        <th>Title</th>
+        <th>Description</th>
+        <th>tags</th>
+        <th></th>
+        <th></th>
+      </thead>
+      <tbody>
+        <tr *ngFor="let detail of details; let i = index">
+          <td>{{i+1}}</td>
+          <td>{{detail.title}}</td>
+          <td>{{detail.des}}</td>
+          <td>{{detail.tags}}</td>
+          <td><input type="button" value="Update" class="btn-warning" (click)="update(detail.id)"/></td>
+            <td><input type="button" value="Delete" class="btn-danger"(click)="delete(detail.id)"/></td>
+           </tr>
+      </tbody>
+    </table>
+  </div>

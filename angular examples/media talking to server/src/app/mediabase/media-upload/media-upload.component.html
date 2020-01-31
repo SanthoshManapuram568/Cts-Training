@@ -1,0 +1,18 @@
+<div>
+    <h3>Upload media</h3>
+    <div class="row">
+      <div class="col"><label for="">Title</label></div>
+      <div class="col"><input type="text" #title /></div>
+    </div>
+    <div class="row">
+      <div class="col"><label for="">Description</label></div>
+      <div class="col"><input type="text" #des /></div>
+    </div><div class="row">
+      <div class="col"><label for="">Tags</label></div>
+      <div class="col"><input type="text" #tags /></div>
+    </div>
+    <div class="row">
+      
+      <div class="col"><input type="button" value="Save" (click)="uploadMedia(title, des, tags)" /></div>
+    </div>
+  </div>

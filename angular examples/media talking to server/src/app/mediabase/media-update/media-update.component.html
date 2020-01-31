@@ -1,0 +1,18 @@
+<div>
+    <h3>Update Product</h3>
+    <div class="row">
+      <div class="col"><label for="">Title</label></div>
+      <div class="col"><input type="text" value="{{details.title}}" #title /></div>
+    </div>
+    <div class="row">
+      <div class="col"><label for="">Description</label></div>
+      <div class="col"><input type="text" value="{{details.des}}"  #des /></div>
+    </div><div class="row">
+      <div class="col"><label for=""> Tags</label></div>
+      <div class="col"><input type="text" value="{{details.tags}}" #tag /></div>
+    </div>
+    <div class="row">
+      
+      <div class="col"><input type="button" value="Update "(click)="updateMedia(title, des, tag)" /></div>
+    </div>
+  </div>
