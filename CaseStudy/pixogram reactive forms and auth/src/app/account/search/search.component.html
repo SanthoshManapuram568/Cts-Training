@@ -1,0 +1,44 @@
+<div class="container mt-5">
+    <form [formGroup]="myFormGroup"  (ngSubmit)="search()">
+    <div class="row">
+        <aside class="col-sm-3 mr-10">
+            <div  class="mr-5">
+                <div class="row justify-content-center mb-4">
+                    <u><a href="#">Account</a></u>
+                </div>
+            </div>
+            <hr>
+            <div class="d-flex flex-column">
+                <div class="p-1">
+                    <button style="background-color: whitesmoke;" type="button" [routerLink]="['/news-feeds']" class="btn w-75 ">Newsfeed</button>
+                </div>
+                <div class="p-1">
+                    <button style="background-color: whitesmoke;" type="button"  [routerLink]="['/blocked-accounts']" class="btn w-75 " >BlockedContacts</button>
+                </div>
+                <div class="p-1">
+                    <button style="background-color: whitesmoke;" type="button"  [routerLink]="['/account-update']" class="btn  w-75">AccountUpdate</button>
+                </div>
+               
+                <div class="p-1">
+                    <button style="background-color: whitesmoke;" type="button"  [routerLink]="['/logout']" (click)="message()" class="btn w-75">Logout</button>
+                </div>
+            </div>
+  
+        </aside> 
+    
+  
+        <section class="col-sm-9">
+          <div class="row">
+              <div class="col-sm-7">
+                  <input type="search"  name="search" [formControl]="myFormGroup.controls['search']" class="form-control form-control-sm h-100">
+              </div>
+              <div class="col-sm-2">
+                 <button type="submit"  style="background-color: whitesmoke;" class="btn ">
+                  Search
+              </button>
+              </div>
+          </div>
+      </section>
+    </div>
+    </form>
+  </div>
