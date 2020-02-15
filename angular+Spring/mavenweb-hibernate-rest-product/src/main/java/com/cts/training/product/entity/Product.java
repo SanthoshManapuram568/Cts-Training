@@ -15,10 +15,10 @@ public class Product {
 		// TODO Auto-generated constructor stub
 	}
 	
-	public Product(Integer id, String name, String catageory, String cost) {
+	public Product(Integer id, String name, String category, String cost) {
 		this.id = id;
 		this.name = name;
-		this.catageory = catageory;
+		this.category =category;
 		this.cost = cost;
 	}
 	@Id
@@ -27,7 +27,7 @@ public class Product {
 	@Column
 	private String name;
 	@Column
-	private String catageory;
+	private String category;
 	@Column
 	private String cost;
 	public Integer getId() {
@@ -42,11 +42,11 @@ public class Product {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public String getCatageory() {
-		return catageory;
+	public String getCategory() {
+		return category;
 	}
-	public void setCatageory(String catageory) {
-		this.catageory = catageory;
+	public void setCategory(String category) {
+		this.category = category;
 	}
 	public String getCost() {
 		return cost;

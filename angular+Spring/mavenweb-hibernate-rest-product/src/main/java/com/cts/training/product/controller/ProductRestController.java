@@ -65,12 +65,13 @@ public class ProductRestController {
 		return response;
 	}
 		
-	@PutMapping("/products")
-	public ResponseEntity<Product> saveUpdate(@RequestBody Product product) {
-		if(!this.iProductService.updateProduct(product))
+	@PutMapping("/products/{productId}")
+	public ResponseEntity<Product> saveUpdate(@PathVariable Integer productId,@RequestBody Product product) {
+		Product p=new Product(productId,product.getName(),product.getCategory(),product.getCost());
+		if(!this.iProductService.updateProduct(p))
 			throw new RuntimeException("Could not update record!!!");
 		ResponseEntity<Product> response = 
-				new ResponseEntity<Product>(product, HttpStatus.OK);
+				new ResponseEntity<Product>(p, HttpStatus.OK);
 
 		return response;
 	}
